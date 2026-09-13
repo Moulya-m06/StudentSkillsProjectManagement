@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Launch Student Skills PM",
+      "request": "launch",
+      "mainClass": "Main",
+      "classPaths": [
+        "${workspaceFolder}/out",
+        "${workspaceFolder}/lib/mysql-connector-j.jar"
+      ],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "Compile Java"
+    }
+  ]
+}
