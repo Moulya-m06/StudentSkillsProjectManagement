@@ -20,7 +20,6 @@ StudentSkillsProjectManagement/
 |-- images/
 |-- sql/
 |   `-- database.sql
-|-- db.properties
 `-- .vscode/
 ```
 
@@ -28,15 +27,16 @@ StudentSkillsProjectManagement/
 
 1. Open MySQL Workbench or MySQL CLI.
 2. Run `sql/database.sql`.
-3. Open `db.properties` and set your MySQL username/password.
+3. Create a `db.properties` file in the project folder and add your own MySQL username and password.
 4. Download MySQL Connector/J and place the jar in `lib/mysql-connector-j.jar`.
 
 Default local MySQL settings:
 
 ```properties
-db.user=root
+db.user=
 db.password=
 ```
+> **Note:** `db.properties` is not included in this repository because it contains database credentials. Each user should create their own `db.properties` file using their local MySQL credentials.
 
 If your MySQL root account has a password, enter it after `db.password=`.
 
